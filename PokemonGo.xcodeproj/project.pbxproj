@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0CDD582B1D3334004576CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7AA82C2B1D2C3300789AAF /* MapKit.framework */; };
 		AB7AA8152B1D2A9B00789AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA8142B1D2A9B00789AAF /* AppDelegate.swift */; };
 		AB7AA8172B1D2A9B00789AAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA8162B1D2A9B00789AAF /* SceneDelegate.swift */; };
 		AB7AA8192B1D2A9B00789AAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA8182B1D2A9B00789AAF /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		AB7AA8202B1D2AA000789AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7AA8232B1D2AA000789AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB7AA8252B1D2AA000789AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7AA82C2B1D2C3300789AAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0CDD582B1D3334004576CC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				AB7AA8132B1D2A9B00789AAF /* PokemonGo */,
 				AB7AA8122B1D2A9B00789AAF /* Products */,
+				AB7AA82B2B1D2C3300789AAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				AB7AA81D2B1D2A9B00789AAF /* PokemonGo.xcdatamodeld */,
 			);
 			path = PokemonGo;
+			sourceTree = "<group>";
+		};
+		AB7AA82B2B1D2C3300789AAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB7AA82C2B1D2C3300789AAF /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
