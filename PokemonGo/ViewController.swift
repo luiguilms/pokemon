@@ -15,9 +15,17 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         ubicacion.delegate = self
-        ubicacion.requestWhenInUseAuthorization()
-        mapView.showsUserLocation = true
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse{
+            mapView.showsUserLocation = true
+            ubicacion.startUpdatingLocation()
+        }else{
+            ubicacion.requestWhenInUseAuthorization()
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        print("Ubicacion actualizada")
     }
 
 
